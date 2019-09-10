@@ -1,4 +1,4 @@
-\documentclass[a4paper]{simpleresume}
+\documentclass[a4paper,10pt]{simpleresume}
 \usepackage[margin=1in]{geometry}
 \begin{document}
 
@@ -20,10 +20,47 @@ B.Sc. Computer Applications, 8.64 CGPA.
 \section{Projects}
 \datedsubsection{Push Notification for Shipment Lifecycle}{Amazon}
 \begin{itemize}
-\item Sending push notification through Amazon SNS whenever a shipment changes state.
+\item Aspect based system for sending push notification whenever a shipment changes state.
+\item Helps dependent teams to build dashboard over this and isolate problems with shipments.
+\item Technology used: Amazon SNS, Java, AspectJ.
 \end{itemize}
-\datedsubsection{DB Migration Of A Core Project}{Amazon}
-\datedsubsection{Parser For Modem Log Query Language}{Samsung}
-
+\datedsubsection{Interpreter For Modem Log Query Language}{Samsung}
+\begin{itemize}
+    \item Developed a Domain Specific Language (DSL) and its interpreter to query modem logs.
+    \item 100s of scripts written in this DSL which save hours of log analysis time of test engineers.
+    \item Technology used: C++, Boost::Spirit library.
+    \end{itemize}
+\datedsubsection{DB Migration Of A Core Application}{Amazon}
+\begin{itemize}
+    \item Migrated a core application of the team from one relational DB to another.
+    \item Made the application DB independent by removingall DB specific code snippets.
+    \item Migrated all the DB triggers used by the application.
+\end{itemize}
+\datedsubsection{New Column In All DB Tables}{Amazon}
+\begin{itemize}
+    \item Made code changes to populate the new column.
+    \item Performed DB backfill to add values in the new column.
+\end{itemize}
+\datedsubsection{Test Script Generator}{Samsung}
+\begin{itemize}
+    \item Developed a tool to generate test scripts to mimic scenario from modem logs.
+    \item Saved around an hour of effort per testscripts.
+    \item Technology used: Python 3.
+\end{itemize}
+\datedsubsection{Handwritten Digit Recognization}{Hobby Project}
+\begin{itemize}
+    \item Implemented Neural Network using Stochastic Gradient Descent.
+    \item Achieved 96\% accuracy on MNIST dataset.
+    \item Github: https://github.com/sameerkrmishra/mnist
+    \item Technology used: Python, NumPy.
+\end{itemize}
+\datedsubsection{Image Classification}{Hobby Project}
+\begin{itemize}
+    \item Implemented using Convolutional Neural Network.
+    \item Trained on images of cats and dogs from Kaggle.
+    \item Achieved 90\% accuracy on cross-validation set.
+    \item Github: https://github.com/sameerkrmishra/ml- notebooks/blob/master/dogs-and-cats.ipynb
+    \item Technology used: Python, Keras, NumPy.
+\end{itemize}
 
 \end{document}
