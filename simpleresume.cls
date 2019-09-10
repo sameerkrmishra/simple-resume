@@ -4,6 +4,9 @@
 \RequirePackage{titlesec}
 \RequirePackage{xcolor}
 
+\usepackage[top=0.5in,bottom=0.5in,left=0.5in,right=0.5in]{geometry}
+\pagestyle{empty}
+
 \titleformat{\section}
     {\Large\scshape\raggedright}
     {}{0em}
